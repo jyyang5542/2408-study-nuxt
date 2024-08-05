@@ -2,6 +2,8 @@
   <section class="sec">
     <h1 class="sec__title" :style="{ color: color }">Main</h1>
     <Gnb />
+
+    <div class="sec__cont active">Content</div>
   </section>
 </template>
 

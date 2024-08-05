@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import Main from '~/pages/main/index.vue';
+import Main from '~/pages/Main/index.vue';
 
 const state = reactive({
   color: 'red',

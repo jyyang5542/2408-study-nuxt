@@ -11,7 +11,8 @@
 <script setup>
 const list = ref([
   { href: '/', name: 'Main' },
-  { href: '/about', name: 'About' },
+  { href: '/About', name: 'About' },
+  { href: '/Axios', name: 'Axios' },
 ]);
 
 const route = useRoute();
