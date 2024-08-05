@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import Tabs from '~/components/tabs.vue';
 export default {
   data() {
     return {
