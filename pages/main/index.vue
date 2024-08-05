@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 :color="color">Main</h1>
+    <h1 :style="{ color: color }">Main</h1>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import { defineProps } from 'vue';
 const props = defineProps({
   color: {
     type: String,
-    default: 'blue',
+    // default: 'blue',
   },
 });
 </script>
