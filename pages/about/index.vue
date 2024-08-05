@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>About</h1>
-    <tabs :list="tabItems" />
+    <Tabs :list="tabItems" />
   </div>
 </template>
 
