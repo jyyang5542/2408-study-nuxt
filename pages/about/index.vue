@@ -4,4 +4,20 @@
   </div>
 </template>
 
-<script setup></script>
+<script>
+export default {
+  data() {
+    return {};
+  },
+
+  methods: {
+    aboutConsole() {
+      console.log('console');
+    },
+  },
+
+  mounted() {
+    this.aboutConsole();
+  },
+};
+</script>
