@@ -8,19 +8,13 @@
   </nav>
 </template>
 
-<script>
-export default {
-  data() {
-    return {};
+<script setup>
+const props = defineProps({
+  list: {
+    type: Array,
+    required: true,
   },
-  props: {
-    list: {
-      type: Array,
-      required: true,
-    },
-  },
-  methods: {},
-};
+});
 </script>
 
 <style lang="scss" scoped>
