@@ -8,6 +8,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'description', content: 'This is my Nuxt app.' },
         { name: 'keywords', content: 'nuxt, vue, javascript' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
