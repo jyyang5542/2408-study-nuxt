@@ -4,6 +4,8 @@
   </NuxtLayout>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+</script>
 
 <style></style>

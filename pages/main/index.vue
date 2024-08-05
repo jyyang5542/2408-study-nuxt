@@ -1,7 +1,16 @@
 <template>
   <div>
-    <h1>Main</h1>
+    <h1 :color="color">Main</h1>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { defineProps } from 'vue';
+
+const props = defineProps({
+  color: {
+    type: String,
+    default: 'blue',
+  },
+});
+</script>
