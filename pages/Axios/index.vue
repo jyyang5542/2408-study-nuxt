@@ -5,7 +5,8 @@
 
     <div class="sec__cont active">
       <div class="lorem-ipsum">
-        <ul class="lorem-ipsum__list">
+        <div v-if="isLoading">Loading...</div>
+        <ul v-else class="lorem-ipsum__list">
           <li v-for="post in posts" :key="post.id" class="lorem-ipsum__item">
             <h2>{{ post.title }}</h2>
             <p>{{ post.body }}</p>
@@ -20,6 +21,7 @@
 import axios from 'axios';
 
 const posts = ref([]);
+const isLoading = ref(true);
 
 const fetchPosts = async () => {
   try {
@@ -27,6 +29,8 @@ const fetchPosts = async () => {
     posts.value = response.data;
   } catch (error) {
     console.error('Error fetching posts:', error);
+  } finally {
+    isLoading.value = false;
   }
 };
 
