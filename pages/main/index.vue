@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h1 :style="{ color: color }">Main</h1>
+  <section class="sec">
+    <h1 class="sec__title" :style="{ color: color }">Main</h1>
     <Gnb />
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -12,4 +12,19 @@ const props = defineProps({
     // default: 'blue',
   },
 });
+
+function changeTextColor(color) {
+  document.querySelector('h1').style.color = color;
+}
+
+function changeFontSize(fontSize) {
+  document.querySelector('h1').style.fontSize = fontSize;
+}
+
+onMounted(() => {
+  //   changeTextColor(state.color);
+  // changeFontSize(state.fontSize);
+});
+
+onUnmounted(() => {});
 </script>

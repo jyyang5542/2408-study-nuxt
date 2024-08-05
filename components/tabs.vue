@@ -1,8 +1,8 @@
 <template>
-  <nav>
-    <ul>
-      <li v-for="(item, i) in list" :key="i">
-        <a :href="item.href" :title="item.title">{{ item.name }}</a>
+  <nav class="tab">
+    <ul class="tab__list">
+      <li v-for="(item, index) in list" :key="item.name" class="tab__item">
+        <a class="tab__link" :class="{ on: index === activeIndex }" :title="item.name + '으로 이동'" @click.prevent="setActiveTab(index)">{{ item.name }}</a>
       </li>
     </ul>
   </nav>
@@ -15,20 +15,12 @@ const props = defineProps({
     required: true,
   },
 });
-</script>
 
-<style lang="scss" scoped>
-ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+const emit = defineEmits(['update:activeIndex']);
+const activeIndex = ref(0);
 
-  li {
-    padding: 0 10px;
-
-    a {
-      font-size: 24px;
-    }
-  }
+function setActiveTab(index) {
+  activeIndex.value = index;
+  emit('update:activeIndex', index);
 }
-</style>
+</script>

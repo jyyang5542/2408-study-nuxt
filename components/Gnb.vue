@@ -1,8 +1,8 @@
 <template>
-  <nav>
-    <ul>
-      <li v-for="(item, i) in list" :key="i">
-        <a :href="item.href" :title="item.name + '으로 이동'" :class="{ on: item.name === currentTab }">{{ item.name }}</a>
+  <nav class="gnb">
+    <ul class="gnb__list">
+      <li v-for="(item, i) in list" :key="i" class="gnb__item">
+        <a :href="item.href" :title="item.name + '으로 이동'" class="gnb__link" :class="{ on: item.name === currentTab }">{{ item.name }}</a>
       </li>
     </ul>
   </nav>
@@ -21,23 +21,3 @@ const currentTab = computed(() => {
   return list.value.find(item => item.href === path)?.name;
 });
 </script>
-
-<style lang="scss" scoped>
-ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-
-  li {
-    padding: 0 10px;
-
-    a {
-      font-size: 24px;
-
-      &.on {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-</style>
