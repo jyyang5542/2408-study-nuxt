@@ -1,75 +1,56 @@
-# Nuxt 3 Minimal Starter
+# 2408-study-nuxt
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Vue3 기반의 nuxt.js 프로젝트 탐구
 
-## Setup
-
-Make sure to install the dependencies:
+## 01. 프로젝트 세팅
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## 02. 개발 서버 부팅
 
-Start the development server on `http://localhost:3000`:
+다음 경로에서 실행됩니다. `http://localhost:3000`
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+## 03. 산출물
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+로컬 환경에서 산출물 미리 보기:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 04. 프로젝트 구조
+
+```bash
+├ .nuxt/
+├ .vscode/
+├ assets/
+│ │ ├ lib/
+│ │ └ scss/
+├ components/
+├ pages/
+│ │ ├ About/
+│ │ ├ Axios/
+│ │ ├ Main/
+│ │ └ index.vue
+├ public/
+├ server/
+├ .gitignore
+├ .prettierignore
+├ .prettierrc
+├ app.vue
+├ nuxt.config.ts
+├ package-lock.json
+├ package.json
+├ README.md
+└ tsconfig.json
+```
