@@ -5,6 +5,12 @@
 @import './functions';
 @import './reset';
 
+*,
+*::before,
+*::after {
+  word-break: keep-all;
+}
+
 .sec {
   padding: 50px;
 
