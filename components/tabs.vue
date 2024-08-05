@@ -20,6 +20,7 @@ const emit = defineEmits(['update:activeIndex']);
 const activeIndex = ref(0);
 
 function setActiveTab(index) {
+  1;
   activeIndex.value = index;
   emit('update:activeIndex', index);
 }
