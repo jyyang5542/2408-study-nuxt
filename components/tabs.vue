@@ -20,6 +20,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 ul {
   display: flex;
+  justify-content: center;
   gap: 30px;
 
   li {

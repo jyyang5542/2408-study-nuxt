@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>About</h1>
+    <Gnb />
     <Tabs :list="tabItems" />
   </div>
 </template>
