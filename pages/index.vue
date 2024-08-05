@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>Home Page</h1>
-  </div>
+  <Main />
 </template>
 
-<script setup></script>
+<script setup>
+import Main from '~/pages/main/index.vue';
+</script>
