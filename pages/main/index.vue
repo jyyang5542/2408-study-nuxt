@@ -46,7 +46,7 @@ onUnmounted(() => {});
   width: 100%;
   height: 500px;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-areas:
     'a a a e'
     'b c c e'
@@ -54,7 +54,6 @@ onUnmounted(() => {});
     'b f f f';
 
   @media screen and (max-width: 750px) {
-    grid-gap: 10px;
     grid-template-areas:
       'a a a b'
       'c c c b'
