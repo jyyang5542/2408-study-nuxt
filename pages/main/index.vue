@@ -53,6 +53,14 @@ onUnmounted(() => {});
     'b d d e'
     'b f f f';
 
+  @media screen and (max-width: 750px) {
+    grid-gap: 10px;
+    grid-template-areas:
+      'a a a b'
+      'c c c b'
+      'e d d d'
+      'e f f f';
+  }
   &__item {
     display: flex;
     align-items: center;
