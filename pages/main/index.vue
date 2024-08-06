@@ -5,12 +5,12 @@
 
     <div class="sec__cont active">
       <div class="grid">
-        <div class="grid__item grid__item--1">area-a</div>
-        <div class="grid__item grid__item--2">area-b</div>
-        <div class="grid__item grid__item--3">area-c</div>
-        <div class="grid__item grid__item--4">area-d</div>
-        <div class="grid__item grid__item--5">area-e</div>
-        <div class="grid__item grid__item--6">area-f</div>
+        <div class="grid__item grid__item--1">a</div>
+        <div class="grid__item grid__item--2">b</div>
+        <div class="grid__item grid__item--3">c</div>
+        <div class="grid__item grid__item--4">d</div>
+        <div class="grid__item grid__item--5">e</div>
+        <div class="grid__item grid__item--6">f</div>
       </div>
     </div>
   </section>
@@ -48,15 +48,16 @@ onUnmounted(() => {});
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   grid-template-areas:
-    'a b b e'
-    'a c c e'
-    'a d d e'
-    'f f f f';
+    'a a a e'
+    'b c c e'
+    'b d d e'
+    'b f f f';
 
   &__item {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
     border-radius: 10px;
     background-color: #ddd;
 
