@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^1.7.3",
     "nuxt": "^3.12.4",
+    "swiper": "^11.1.9",
     "vue": "latest"
   },
   "devDependencies": {

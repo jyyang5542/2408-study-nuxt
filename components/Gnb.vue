@@ -13,6 +13,7 @@ const list = ref([
   { href: '/', name: 'Main' },
   { href: '/About', name: 'About' },
   { href: '/Axios', name: 'Axios' },
+  { href: '/Swiper', name: 'Swiper' },
 ]);
 
 const route = useRoute();
