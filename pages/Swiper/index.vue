@@ -4,9 +4,7 @@
     <Gnb />
 
     <swiper :modules="[Navigation, Pagination]" navigation :pagination="{ clickable: true }" :slides-per-view="1" :space-between="10" class="mySwiper">
-      <swiper-slide class="sec__cont active">Slide 1</swiper-slide>
-      <swiper-slide class="sec__cont active">Slide 2</swiper-slide>
-      <swiper-slide class="sec__cont active">Slide 3</swiper-slide>
+      <swiper-slide v-for="index in 6" class="sec__cont active">Slide {{ index }}</swiper-slide>
     </swiper>
   </section>
 </template>
