@@ -65,7 +65,8 @@
     gap: 30px;
 
     @media screen and (max-width: 750px) {
-      gap: 10px;
+      gap: 0px;
+      justify-content: space-around;
     }
   }
   &__item {

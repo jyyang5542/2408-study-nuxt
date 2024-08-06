@@ -13,6 +13,7 @@ const list = ref([
   { href: '/', name: 'Main' },
   { href: '/About', name: 'About' },
   { href: '/Axios', name: 'Axios' },
+  { href: '/MyAPI', name: 'MyAPI' },
   { href: '/Swiper', name: 'Swiper' },
 ]);
 
