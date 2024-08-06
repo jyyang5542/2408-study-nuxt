@@ -15,7 +15,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 </script>
 
-<style lang="scss" scoled>
+<style lang="scss" scoped>
 .swiper-button-prev,
 .swiper-button-next {
   &::before,
