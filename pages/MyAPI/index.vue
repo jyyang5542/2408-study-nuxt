@@ -51,6 +51,9 @@ onMounted(async () => {
   gap: 20px;
   width: 100%;
 
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+  }
   &__list {
     flex: 1;
     display: flex;

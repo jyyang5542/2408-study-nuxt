@@ -44,6 +44,7 @@ npm run preview
 │ │ └ index.vue
 ├ public/
 ├ server/
+│ │ └ api/
 ├ .gitignore
 ├ .prettierignore
 ├ .prettierrc
