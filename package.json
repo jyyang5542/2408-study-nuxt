@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "concurrently \"sass --watch assets/scss:assets/css\" \"nuxt dev\"",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -16,6 +16,7 @@
     "vue": "latest"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "sass": "^1.77.8",
     "sass-loader": "^16.0.0"
   }
