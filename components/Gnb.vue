@@ -11,7 +11,7 @@
 <script setup>
 const list = ref([
   { href: '/', name: 'Main' },
-  { href: '/About', name: 'About' },
+  { href: '/Tab', name: 'Tab' },
   { href: '/Axios', name: 'Axios' },
   { href: '/MyAPI', name: 'MyAPI' },
   { href: '/Swiper', name: 'Swiper' },

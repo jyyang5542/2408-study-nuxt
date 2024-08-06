@@ -1,6 +1,6 @@
 <template>
   <section class="sec">
-    <h1 class="sec__title">MyAPI</h1>
+    <h1 class="sec__title" style="text-transform: capitalize">MyAPI</h1>
     <Gnb />
     <div class="sec__cont active">
       <div v-if="loading">Loading...</div>

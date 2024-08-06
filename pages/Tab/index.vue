@@ -1,6 +1,6 @@
 <template>
   <section class="sec">
-    <h1 class="sec__title">About</h1>
+    <h1 class="sec__title">Tab</h1>
     <Gnb />
     <Tabs :list="tabItems" @update:activeIndex="handleActiveIndexUpdate" />
 
